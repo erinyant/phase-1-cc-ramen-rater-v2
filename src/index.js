@@ -28,6 +28,14 @@
 //   main,
 // };
 
+function main() {
+  displayRamens()
+  addSumbitListener()
+}
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("After DOM loaded")
+})
 
 fetch ("http://localhost:3000/ramens")
   .then((resp) => resp.json())
